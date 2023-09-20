@@ -7,19 +7,26 @@ const realFileBtn = document.getElementById("real-file");
 const customBtn = document.getElementById("custom-button")
 const customText = document.getElementById("custom-text")
 
+const actionBtn = document.querySelector('.action-btn')
+
 function zoomInBtn() {
   if(zoomIn && image) {
-    image.style.width = `${image.width + 20}px`;
-    image.style.height = `${image.height + 20}px`;
+    if(image.height < 400) {
+      image.style.width = `${image.width + 60}px`;
+      image.style.height = `${image.height + 20}px`;
+    }
+    
   }
 }
 
 function zoomOutBtn() {
   if(zoomOut && image) {
-
-    image.style.width = `${image.width - 20}px`;
-    image.style.height = `${image.height - 20}px`;
+    if(image.width > 79) {
+      image.style.width = `${image.width - 60}px`;
+      image.style.height = `${image.height - 20}px`;
+    }
   }
+  
 }
 
 realFileBtn.onchange = function() {

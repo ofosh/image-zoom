@@ -13,13 +13,33 @@ body {
   max-width: 600px;
   text-align: center;
 }
+.content-img {
+  max-width: 600px;
+  border: 1px solid red;
+}
+
 .content img {
   width: 50%;
-  height: 30%;
+  height: 300px;
   padding: 10px;
+  margin-bottom: 30px;
 }
+
+.content2 {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+}
+
+.action-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+}
+
 .action-btn button {
-  margin: 10px;
   border: none;
   outline: none;
   padding: 8px;
